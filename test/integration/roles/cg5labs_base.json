@@ -1,0 +1,14 @@
+{
+  "name": "cg5labs_base",
+  "default_attributes": {
+    "demo": {
+      "greeting": "this came from my role"
+    }
+  },
+  "run_list": [
+    "recipe[cg5labs_base::motd]",
+    "recipe[cg5labs_base::hosts_wrapper]",
+    "recipe[cg5labs_base::fw]"
+  ]
+}
+
